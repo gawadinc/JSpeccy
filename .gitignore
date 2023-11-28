@@ -1,0 +1,15 @@
+/build/
+/dist/
+nbproject/*
+!nbproject/project.properties
+!nbproject/project.xml
+.idea
+target/
+*.iml
+.classpath
+.factorypath
+.project
+.settings
+.vscode
+.metadata
+
