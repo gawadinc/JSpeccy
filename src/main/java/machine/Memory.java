@@ -6,6 +6,7 @@ package machine;
 
 import configuration.JSpeccySettings;
 import configuration.MemoryType;
+import java.security.SecureRandom;
 import lombok.extern.slf4j.Slf4j;
 import snapshots.MemoryState;
 import tv.porst.jhexview.IDataChangedListener;
@@ -63,7 +64,7 @@ public final class Memory {
     public Memory(JSpeccySettings memSettings) {
         spectrumModel = null;
         settings = memSettings;
-        random = new Random();
+        random = new SecureRandom();
         loadRoms();
         IF2RomPaged = false;
         reset(MachineTypes.SPECTRUM48K);
