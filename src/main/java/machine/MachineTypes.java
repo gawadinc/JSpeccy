@@ -53,25 +53,8 @@ public enum MachineTypes {
                 this.hasDisk = false;
                 this.codeModel = CodeModel.SPECTRUM48K;
                 break;
-            case 1: // Spectrum 48K
-            default:
-                this.longModelName = "ZX Spectrum 48K";
-                this.shortModelName = "48k";
-                this.clockFreq = 3500000;
-                this.tstatesFrame = 69888;
-                this.tstatesLine = 224;
-                this.upBorderWidth = 64;
-                this.scanLines = 312;
-                this.lengthINT = 32;
-                this.firstScrByte = 14336;
-                this.lastScrUpdate = 57246;
-                this.outOffset = 3;
-                this.outBorderOffset = 0;
-                this.hasAY8912 = false;
-                this.hasDisk = false;
-                this.codeModel = CodeModel.SPECTRUM48K;
-                break;
-            case 2: // Spectrum 128K
+            case 1:
+case 2: // Spectrum 128K
                 this.longModelName = "ZX Spectrum 128K";
                 this.shortModelName = "128";
                 this.clockFreq = 3546900;
@@ -139,7 +122,23 @@ public enum MachineTypes {
                 this.hasDisk = true;
                 this.codeModel = CodeModel.SPECTRUMPLUS3;
                 break;
-        }
+default:
+                this.longModelName = "ZX Spectrum 48K";
+                this.shortModelName = "48k";
+                this.clockFreq = 3500000;
+                this.tstatesFrame = 69888;
+                this.tstatesLine = 224;
+                this.upBorderWidth = 64;
+                this.scanLines = 312;
+                this.lengthINT = 32;
+                this.firstScrByte = 14336;
+                this.lastScrUpdate = 57246;
+                this.outOffset = 3;
+                this.outBorderOffset = 0;
+                this.hasAY8912 = false;
+                this.hasDisk = false;
+                this.codeModel = CodeModel.SPECTRUM48K;
+                break;        }
     }
 
     public String getLongModelName() {
