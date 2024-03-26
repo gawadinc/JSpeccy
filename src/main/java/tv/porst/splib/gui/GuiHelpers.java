@@ -18,7 +18,7 @@ public final class GuiHelpers {
 		final GraphicsEnvironment localGraphicsEnvironment = GraphicsEnvironment.getLocalGraphicsEnvironment();
 		final Font[] fonts = localGraphicsEnvironment.getAllFonts();
 		for (final Font font : fonts) {
-			if (font.getName().equals("Courier New")) {
+			if ("Courier New".equals(font.getName())) {
 				return "Courier New";
 			}
 		}
