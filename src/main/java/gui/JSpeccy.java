@@ -274,7 +274,7 @@ public class JSpeccy extends javax.swing.JFrame {
 //            log.error("An error was encountered whilst attempting so set the Nimbus look and feel", ex);
 //        }
 
-        if (UIManager.getLookAndFeel().getName().equals("Metal")) {
+        if ("Metal".equals(UIManager.getLookAndFeel().getName())) {
             try {
                 // turn off bold fonts
                 UIManager.put("swing.boldMetal", Boolean.FALSE);
