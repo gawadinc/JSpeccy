@@ -1,3 +1,5 @@
+Fork from https://github.com/jsanchezv/JSpeccy
+
 = *JSpeccy*: A multiplatform ZX Spectrum emulator written in Java language
 
 https://masterminds.github.io/stability/experimental.html[image:https://masterminds.github.io/stability/sustained.svg[]]
